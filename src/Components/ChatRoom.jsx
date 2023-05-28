@@ -26,7 +26,7 @@ const ChatRoom = () => {
   };
 
   useEffect(() => {
-    const socket = io("https://socket-io-back-6tuhmprrz-nadeemchoudhary37-gmailcom.vercel.app");
+    const socket = io("https://socket-io-back-end.vercel.app");
     setsocket(socket);
     socket.on("connect", () => {
       console.log(socket.id); // x8WIv7-mJelg7on_ALbx
