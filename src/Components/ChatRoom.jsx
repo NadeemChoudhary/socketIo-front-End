@@ -26,7 +26,7 @@ const ChatRoom = () => {
   };
 
   useEffect(() => {
-    const socket = io("http://localhost:4000");
+    const socket = io("https://socket-5kjh.onrender.com");
     setsocket(socket);
     socket.on("connect", () => {
       console.log(socket.id); // x8WIv7-mJelg7on_ALbx
